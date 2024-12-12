@@ -1,0 +1,36 @@
+﻿<Window x:Class="Project_organization.WindowsFrame.Department"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_organization.WindowsFrame"
+        mc:Ignorable="d"
+        Title="Проектная организация" Height="450" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FFC5E9FF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.ColumnSpan="4" Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер отдела" Width="*"/>
+                <DataGridTextColumn Header="Начальник" Width="*"/>
+                <DataGridTextColumn Header="Сотрудник отдела" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Вернутся" Grid.Column="3" Grid.Row="1" Width="100" Height="30" Background="#FF91ACFF" Click="Button_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

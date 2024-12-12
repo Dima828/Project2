@@ -1,0 +1,39 @@
+﻿<Window x:Class="Project_organization.WindowsFrame.Autorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_organization.WindowsFrame"
+        mc:Ignorable="d"
+        Title="Проектная организация" Height="450" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FFC5E9FF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Авторизация" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"></TextBlock>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,0,59">Логин</TextBlock>
+        <TextBox Grid.Row="1"  Grid.Column="1" Height="30" x:Name="Tbx_Login"></TextBox>
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Пароль" Margin="0,0,0,58"></TextBlock>
+        <PasswordBox Grid.Row="2" Height="30" Grid.Column="1" x:Name="Tbx_Password"></PasswordBox>
+        
+        <Button Content="Войти" Grid.Column="1" Grid.Row="3" Width="100" Height="30" Background="#FF91ACFF" Click="Button_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
