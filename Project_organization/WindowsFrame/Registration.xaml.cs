@@ -33,6 +33,7 @@ namespace Project_organization.WindowsFrame
             if (Login == "" && Password == "" && SecondPassword == "")
             {
                 MessageBox.Show("Убедитесь, что все поля заполнены!", "Уведомление!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Убедитесь, что все поля заполнены!", "Уведомление!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else if (Password != SecondPassword)
             {
